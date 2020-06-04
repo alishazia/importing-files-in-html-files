@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 
 
-class App extends Component {
+export default class Import extends Component {
   constructor(){
     super()
     this.state={
@@ -11,8 +11,11 @@ class App extends Component {
   }
 
   render(){
+    alert('I am alert tag inside render function')
     return(
-      <div>hello, creating a new project</div>
+      <div>
+      This is render function.
+      </div>
     )
   }
 }
